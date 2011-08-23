@@ -1,0 +1,11 @@
+<div>
+	<% @posts.each_with_index do |post, index| %>
+		<% sequence = @posts.offset + index +1 %>
+	  <p>
+	    <div class='user'><%= sequence %>:<%= post.author %></div>
+	    <div class='content'><%=raw post.content %></div>
+	  </p>
+	<% end %>
+	<%= will_paginate @posts%>
+</div>
+

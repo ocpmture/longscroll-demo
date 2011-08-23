@@ -1,0 +1,17 @@
+body {
+  background: #545A62;
+  overflow: hidden;
+  margin: 0;
+  font: 13px "Lucida Grande", Sans-serif;
+  color: #000;
+}
+h2 {
+  text-shadow: #777 1px 1px 1px;
+}
+
+input[type=text]:focus {
+}
+#request_box {
+  margin: auto;
+  text-align: center;
+}

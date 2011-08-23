@@ -1,0 +1,7 @@
+<% @posts.each_with_index do |post, index| %>
+	<% sequence = @posts.offset + index +1 %>
+  <div class='entry' data-count='<%= sequence %>'>
+    <div class='user'><%= sequence %>:<%= post.author %></div>
+    <div class='content'><%=raw post.content %></div>
+  </div>
+<% end %>

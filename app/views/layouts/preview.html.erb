@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ForumPreviewer</title>
+  <%= stylesheet_link_tag 'previewer' %>
+  <%= javascript_include_tag 'jquery-1.4.2.min.js','jquery.bidirectionalscroller',
+ 		'jquery.scrollstop', 'application' %>
+  <%= csrf_meta_tag %>
+<script type='text/javascript'>
+$(document).ready(function() {
+	$("#main").scroller({infoURL: '<%= info_path %>', requestURL: '<%= view_path %>/', numEntries:<%= @count %>, perPage: <%= Post.per_page %>});
+})
+</script>
+</head>
+<body>
+<div id='cover'><img src='/images/loading.gif'></div>
+<div id='pager'></div>
+<div id='loading_bar_top'><img src='/images/loading.gif'></div>
+<div id='main'>
+<%= yield %>
+</div>
+<div id='loading_bar_bottom'><img src='/images/loading.gif'></div>
+</body>
+</html>

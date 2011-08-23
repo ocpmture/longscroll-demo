@@ -1,0 +1,101 @@
+body {
+  background: #545A62;
+  overflow: hidden;
+  margin: 0;
+}
+#cover {
+	background: #545A62;
+	position: absolute;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+#cover img {
+  height: 10px;
+  text-align: center;
+}
+#main {
+	height: 100%;
+	margin-right: -16px;
+	padding: 0 50px;
+	overflow: auto;
+}
+#main img {
+  max-width: 100%;
+}
+#pager{
+  position: fixed;
+  right: 8px;
+	padding: 4px;
+	overflow: auto;
+}
+#pager a {
+  display: block;
+  padding: 0 2px;
+	text-decoration: none;
+	margin: 4px 1%;
+	font: 10px Arial, Sans-serif;
+	color: #C2CCDA;
+	overflow: auto;
+}
+.current_link {
+  color: #fff;
+  background: #42474F;
+}
+
+div[id^=loading] {
+  width: 100%;
+  margin: 0;
+	padding: 0;
+	text-align: center;
+}
+div[id^=loading] img{
+
+}
+#loading_bar_top {
+	position: fixed;
+	top: 0;
+}
+
+#loading_bar_bottom {
+  position: fixed;
+  bottom: 0;
+}
+.entry {
+  margin: 10px auto;
+  border: 1px solid #3A3E44;
+  border-radius: 10px;
+}
+.entry .user {
+  background: #3A3E44;
+  padding: 6px 10px 4px 10px;
+  color: #fefefe;
+  font: 11px Monaco, Verdana, Sans;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.entry .content {
+  padding: 8px 10px 8px 10px;
+  background: #fefefe;
+  color: #000;
+  font: 12px/17px Arial, Verdana, Sans;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.entry .quote {
+  background: #eeeeee;
+  border: 1px solid #3A3E44;
+  padding: 6px 8px;
+  margin: 4px 3px 10px 3px;
+}
+.entry .quote_header {
+  font-weight: bold;
+  margin-bottom: 0.3em;
+}
+
+.entry .spoiler {
+  border: 1px solid #3A3E44;
+  padding: 6px 8px;
+}
